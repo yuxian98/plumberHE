@@ -72,3 +72,11 @@ function(path_to_psa_inputs = "parameter_distributions.csv",
 }
 
 
+#* Check the API key is correct
+#* @get /checkAPIkey
+function(){
+  return(TRUE)
+}
+
+
+

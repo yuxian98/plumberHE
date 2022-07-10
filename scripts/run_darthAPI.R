@@ -44,3 +44,19 @@ source("report/makeCEPlane.R")
 rmarkdown::render(input = "report/darthreport.Rmd",
                   params = list("df_results" = results),
                   output_dir = "outputs")
+
+
+# check API Key
+value_checkAPI <- httr::content(
+  httr::GET(
+    # the Server URL can also be kept confidential, but will leave here for now
+    url = "https://connect.bresmed.com",
+    # path for the API within the server URL
+    path = "rhta2022/checkAPIkey",
+    # we include a key here to access the API ... like a password protection
+    config = httr::add_headers(Authorization = paste0("Key ",
+                                                      Sys.getenv("CONNECT_KEY")))
+  )
+)
+
+unlist(value_checkAPI)
