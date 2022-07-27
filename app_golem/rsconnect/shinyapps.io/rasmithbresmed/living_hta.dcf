@@ -1,0 +1,13 @@
+name: living_hta
+title: living_hta
+username:
+account: rasmithbresmed
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 6657401
+bundleId: 6137614
+url: https://rasmithbresmed.shinyapps.io/living_hta/
+when: 1658912488.08496
+lastSyncTime: 1658912488.08496
+asMultiple: FALSE
+asStatic: FALSE
