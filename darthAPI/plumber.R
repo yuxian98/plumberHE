@@ -72,8 +72,14 @@ function(path_to_psa_inputs = "parameter_distributions.csv",
 }
 
 
-#* Check the API key is correct
+#* @apiTitle Check the API key is correct
+#* 
+#* @apiDescription Returns true if the user has access - used in the app
+#* to check whether there is access to the API or not to facilitate pushing button
+#* multiple times.
+#* 
 #* @get /checkAPIkey
+#* 
 function(){
   return(TRUE)
 }

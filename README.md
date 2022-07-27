@@ -80,7 +80,25 @@ httr::content(
 
 ## Example App
 
-An example app can be found in the `app files` folder. This contains a very simple R shiny application which allows users to query the API for different variable inputs.
+An example app can be found in the `app_golem` folder. This contains a very simple R shiny application which allows users to query the API for different variable inputs. An online versio of this app can be found [here](https://rasmithbresmed.shinyapps.io/app_golem/) To run the demo app locally run:
+
+```
+
+# set the working directory to the golem app
+setwd("app_golem")
+
+# load the packages necessary
+pkgload::load_all(export_all = FALSE,
+                  helpers = FALSE,
+                  attach_testthat = FALSE)
+# include options here.
+options( "golem.app.prod" = TRUE)
+
+# run the 'run_app' function
+livinghta::run_app() # add parameters here (if any)
+
+
+```
 
 
 ## Creating the automated workflow
