@@ -9,4 +9,4 @@ There are several functions from the DARTH group:
 - `run_model` function runs the model for each PSA iteration and returns results. Uses the `dampack::run_psa` function.
 
 A custom function is defined in the script.
-- `overwrite_parameter_value` overwrites defined parameter inputs (e.g. parameter "p_HS1" use distribution "norm" with defined "mean" and "sd". 
+- `overwrite_parameter_value` overwrites defined parameter inputs (e.g. parameter "p_HS1" use distribution "norm" with defined "mean" and "sd").
