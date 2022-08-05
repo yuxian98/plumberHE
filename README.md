@@ -1,9 +1,9 @@
 [![DOI](https://zenodo.org/badge/481174680.svg)](https://zenodo.org/badge/latestdoi/481174680)
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.png?v=103)](https://opensource.org/licenses/mit-license.php)
 
-This repository was originally created for the [R-HTA](https://r-hta.org/) workshop, held in Oxford on Thursday 19th May 2022. The slides for this presentation can be found [here](https://github.com/RobertASmithBresMed/plumberHE/blob/main/publication/Living%20HTA%20May22.pdf). The presentation is on Youtube [here](https://www.youtube.com/watch?v=hqQV9jdCRyg)
+This repository was originally created for the [R-HTA](https://r-hta.org/) workshop, held in Oxford on Thursday 19th May 2022. The slides for this presentation can be found [here](https://github.com/RobertASmithBresMed/plumberHE/blob/main/publication/Living%20HTA%20May22.pdf). The presentation is on [Youtube](https://www.youtube.com/watch?v=hqQV9jdCRyg)
 
-An academic paper has been submitted to Wellcome Open Research, the pre-print under review can be found [here](https://wellcomeopenresearch.org/articles/7-194/v1#ref-6). Please reference as:
+An [academic paper](https://wellcomeopenresearch.org/articles/7-194/v1#ref-6) is under peer review at Wellcome Open Research. Please cite as:
 
 >Smith RA, Schneider PP and Mohammed W. Living HTA: Automating Health Technology Assessment with R [version 1; peer review: awaiting peer review]. Wellcome Open Res 2022, 7:194 (https://doi.org/10.12688/wellcomeopenres.17933.1)
 
