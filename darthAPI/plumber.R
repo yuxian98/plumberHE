@@ -1,5 +1,3 @@
-#################
-
 library(dampack)
 library(readr)
 library(assertthat)
@@ -14,9 +12,9 @@ library(assertthat)
 
 #* Run the DARTH model
 #* @serializer csv
-#* @param path_to_psa_inputs is the path of the csv
-#* @param model_functions gives the github repo to source the model code
-#* @param param_updates gives the parameter updates to be run
+#* @param path_to_psa_inputs is the path of the csv file containing the PSA parameters
+#* @param model_functions gives the GitHub repo to source the model code
+#* @param param_updates gives the replacement values of the editable parameters
 #* @post /runDARTHmodel
 function(path_to_psa_inputs = "parameter_distributions.csv",
          model_functions = paste0("https://raw.githubusercontent.com/",
@@ -70,19 +68,3 @@ function(path_to_psa_inputs = "parameter_distributions.csv",
   return(results)
   
 }
-
-
-#* @apiTitle Check the API key is correct
-#* 
-#* @apiDescription Returns true if the user has access - used in the app
-#* to check whether there is access to the API or not to facilitate pushing button
-#* multiple times.
-#* 
-#* @get /checkAPIkey
-#* 
-function(){
-  return(TRUE)
-}
-
-
-

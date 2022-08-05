@@ -26,7 +26,7 @@ results <- httr::content(
                    v2 = c(150, 100))
       )
     ),
-    # we include a key here to access the API ... like a password protection
+    # we include a key here to access the API here the key is a env variable
     config = httr::add_headers(Authorization = paste0("Key ", 
                                                       Sys.getenv("CONNECT_KEY")))
   )
