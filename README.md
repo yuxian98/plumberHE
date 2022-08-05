@@ -33,7 +33,7 @@ Robert Smith<sup>1,2,3</sup>, Paul Schneider<sup>1,3</sup> & Wael Mohammed<sup>1
 
 
 ## Diagram
-<img src='app_files/www/process_diagram.PNG' height="300" align="center"/>
+<img src='app_files/www/process_diagram2.jpg' height="500" align="center"/>
 
 
 ## Creating the API
