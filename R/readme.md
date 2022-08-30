@@ -2,7 +2,7 @@
 
 The functions contained in the [darth_funcs.R](https://github.com/RobertASmithBresMed/plumberHE/blob/main/R/darth_funcs.R) script constitute a health economic model.
 
-There are several functions from the DARTH group (orignal code [here](https://github.com/DARTH-git):
+There are several functions from the DARTH group (orignal code [here](https://github.com/DARTH-git)):
 - `simulate_strategies` runs the model for different strategies
 - `run_sick_sicker_model` is the engine, it runs the model for a set of parameter inputs
 - `generate_psa_params` is adapted from DARTH, using the new `drawHelper` function to draw PSA iterations from defined distributions.
