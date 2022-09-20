@@ -36,13 +36,13 @@ function(path_to_psa_inputs = "parameter_distributions.csv",
   # for each row of the data-frame containing the variables to be changed...
   for(n in 1:nrow(param_updates)){
   
-  # update parameters from API input
-  psa_inputs <- overwrite_parameter_value(
-                            existing_df = psa_inputs,
-                            parameter = param_updates[n,"parameter"], 
-                            distribution = param_updates[n,"distribution"],
-                            v1 = param_updates[n,"v1"],
-                            v2 = param_updates[n,"v2"])
+    # update parameters from API input
+    psa_inputs <- overwrite_parameter_value(
+                              existing_df = psa_inputs,
+                              parameter = param_updates[n,"parameter"], 
+                              distribution = param_updates[n,"distribution"],
+                              v1 = param_updates[n,"v1"],
+                              v2 = param_updates[n,"v2"])
   }
   
   # run the model using the single run-model function.
