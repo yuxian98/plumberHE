@@ -27,8 +27,7 @@ results <- httr::content(
       )
     ),
     # we include a key here to access the API here the key is a env variable
-    config = httr::add_headers(
-      key = Sys.getenv("API_KEY")))
+    config = httr::add_headers(key = Sys.getenv("API_KEY")))
 )
 
 # write the results as a csv to the outputs folder...

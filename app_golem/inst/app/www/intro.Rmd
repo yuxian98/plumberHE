@@ -76,6 +76,6 @@ httr::content(
 
 ```
 
-We thank you for your time, please send any feedback to rasmith3@sheffield.ac.uk.
+We thank you for your time, please send any feedback to rsmith@darkpeakanalytics.com
 
 Rob & Paul  

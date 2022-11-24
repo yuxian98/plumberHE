@@ -16,7 +16,7 @@ server <- function(input, output) {
     
     # PS: error message when api key not provided? 
     # Is the API/key supposed accessible to everyone?
-    if(Sys.getenv("CONNECT_KEY") == ""){
+    if(Sys.getenv("API_KEY") == ""){
       shiny::showNotification(type = "error","Error: No API Key provided")
       return(NULL)
     }
@@ -41,18 +41,17 @@ server <- function(input, output) {
     results <- httr::content(
       httr::POST(
         # the Server URL can also be kept confidential, but will leave here for now 
-        url = "https://connect.bresmed.com",
+        url = "https://living-he-32wi7oazkq-nw.a.run.app",
         # path for the API within the server URL
-        path = "rhta2022/runDARTHmodel",
+        path = "runDARTHmodel",
         # code is passed to the client API from GitHub.
-        query = list(model_functions = "https://raw.githubusercontent.com/BresMed/plumberHE/main/R/darth_funcs.R"),
+        query = list(model_functions = "https://raw.githubusercontent.com/RobertASmith/plumberHE/main/R/darth_funcs.R"),
         # set of parameters to be changed ... we are allowed to change these but not some others...
         body = list(
           param_updates = jsonlite::toJSON(df_input)),
         # we include a key here to access the API ... like a password protection
 
-        config = httr::add_headers(Authorization = paste0("Key ", 
-                                                          Sys.getenv("CONNECT_KEY")))
+        config = httr::add_headers(key = Sys.getenv("API_KEY"))
       )
     )
     # insert debugging message
