@@ -13,11 +13,11 @@ check_api = function(api) {
   api_checker_val <- unlist(httr::content(
     httr::GET(
       # the Server URL can also be kept confidential, but will leave here for now
-      url = "https://living-he-32wi7oazkq-nw.a.run.app",
+      url = "https://living-he-2-32wi7oazkq-nw.a.run.app",
       # path for the API within the server URL
-      path = "checkAPIkey",
+      path = "/checkAPIkey",
       # we include a key here to access the API ... like a password protection
-      config = httr::add_headers(key = "https://doi.org/10.12688/wellcomeopenres.17933.2")
+      config = httr::add_headers(key = api)
     )
   ))
   
@@ -48,7 +48,7 @@ get_data_from_api = function(df_input, api_key) {
   
   results <- httr::content(
     httr::POST(
-      url = "https://living-he-32wi7oazkq-nw.a.run.app",
+      url = "https://living-he-2-32wi7oazkq-nw.a.run.app",
       path = "runDARTHmodel",
       query = list(model_functions = "https://raw.githubusercontent.com/RobertASmith/plumberHE/main/R/darth_funcs.R"),
       body = list(param_updates = df_input),

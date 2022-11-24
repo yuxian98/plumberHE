@@ -9,7 +9,7 @@ library(httr)
 results <- httr::content(
   httr::POST(
     # the Server URL can also be kept confidential, but will leave here for now 
-    url = "https://living-he-32wi7oazkq-nw.a.run.app",
+    url = "https://living-he-2-32wi7oazkq-nw.a.run.app",
     # path for the API within the server URL
     path = "runDARTHmodel",
     # code is passed to the client API from GitHub.
