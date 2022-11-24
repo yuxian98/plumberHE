@@ -27,3 +27,4 @@ vignettes/*.pdf
 darthAPI/rsconnect/*
 *.docx
 *.tmp
+app_golem/rsconnect/*

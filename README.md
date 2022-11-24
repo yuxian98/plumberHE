@@ -3,11 +3,13 @@
 
 This repository was originally created for the [R-HTA](https://r-hta.org/) workshop, held in Oxford on Thursday 19th May 2022. The slides for this presentation can be found [here](https://github.com/RobertASmithBresMed/plumberHE/blob/main/publication/Living%20HTA%20May22.pdf). The presentation is on [Youtube](https://www.youtube.com/watch?v=hqQV9jdCRyg)
 
-An [academic paper](https://wellcomeopenresearch.org/articles/7-194/v1#ref-6) is under peer review at Wellcome Open Research. Please cite as:
+Live app for this branch: [https://robertasmith.shinyapps.io/app_golem/](https://robertasmith.shinyapps.io/app_golem/). The API Key is the full https://doi.org URL of the paper.
 
->Smith RA, Schneider PP and Mohammed W. Living HTA: Automating Health Technology Assessment with R [version 1; peer review: awaiting peer review]. Wellcome Open Res 2022, 7:194 (https://doi.org/10.12688/wellcomeopenres.17933.1)
+An [academic paper](https://wellcomeopenresearch.org/articles/7-194) has passed peer review at Wellcome Open Research. Please cite as:
 
-# **Living HTA: Automating Health Technology Assessment with R**
+>Smith RA, Schneider PP and Mohammed W. Living HTA: Automating Health Technology Assessment with R. Wellcome Open Res 2022, 7:194 (https://doi.org/10.12688/wellcomeopenres.17933.2)
+
+# **Living HTA: Automating Health Economic Evaluation with R**
 
 Robert Smith<sup>1,2,3</sup>, Paul Schneider<sup>1,3</sup> & Wael Mohammed<sup>1,3</sup>
 

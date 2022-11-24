@@ -173,7 +173,7 @@ app_ui <- function(request) {
               
               tags$a(
                 actionButton("code", "code", icon = icon("code")),
-                href = "https://github.com/RobertASmithBresMed/plumberHE/blob/main/report/academicpaper.pdf",
+                href = "https://github.com/RobertASmith/plumberHE",
                 target = "_blank"
               ),
               tags$a(

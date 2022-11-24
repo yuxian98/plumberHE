@@ -6,13 +6,12 @@ testthat::test_that(desc = "Run the API & checkt hat the dimensions are the same
          results <- httr::content(
                         httr::POST(
                           # the Server URL can also be kept confidential, but will leave here for now 
-                          url = "https://connect.bresmed.com",
+                          url = "https://living-he-32wi7oazkq-nw.a.run.app",
                           # path for the API within the server URL
-                          path = "rhta2022/runDARTHmodel",
+                          path = "runDARTHmodel",
                           # code is passed to the client API from GitHub.
                           query = list(model_functions = 
-                                         paste0("https://raw.githubusercontent.com/",
-                                                "BresMed/plumberHE/main/R/darth_funcs.R")),
+                                         paste0("https://raw.githubusercontent.com/RobertASmith/plumberHE/main/R/darth_funcs.R")),
                           # set of parameters to be changed ... 
                           # we are allowed to change these but not some others
                           body = list(
@@ -24,8 +23,7 @@ testthat::test_that(desc = "Run the API & checkt hat the dimensions are the same
                             )
                           ),
                           # we include a key here to access the API ... like a password protection
-                          config = httr::add_headers(Authorization = paste0("Key ", 
-                                                                            Sys.getenv("CONNECT_KEY")))
+                          config = httr::add_headers(key = Sys.getenv("API_KEY"))
                         )
                       )
          # expect that the data structure is the same ... 
