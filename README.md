@@ -3,7 +3,7 @@
 
 This repository was originally created for the [R-HTA](https://r-hta.org/) workshop, held in Oxford on Thursday 19th May 2022. The slides for this presentation can be found [here](https://github.com/RobertASmithBresMed/plumberHE/blob/main/publication/Living%20HTA%20May22.pdf). The presentation is on [Youtube](https://www.youtube.com/watch?v=hqQV9jdCRyg)
 
-Live app for this branch: [https://robertasmith.shinyapps.io/app_golem/](https://robertasmith.shinyapps.io/app_golem/). The API Key is the full https://doi.org URL of the paper.
+Live app for this branch: [https://darkpeakanalytics.shinyapps.io/living_HTA_demo/]https://darkpeakanalytics.shinyapps.io/living_HTA_demo/). The API Key is the full https://doi.org URL of the paper.
 
 An [academic paper](https://wellcomeopenresearch.org/articles/7-194) has passed peer review at Wellcome Open Research. Please cite as:
 
