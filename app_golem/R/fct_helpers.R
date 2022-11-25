@@ -21,7 +21,7 @@ check_api = function(api) {
     )
   ))
   
-  api_checker_val <- T # to remove
+  #api_checker_val <- T # to remove
   
   return(isTRUE(api_checker_val))
   

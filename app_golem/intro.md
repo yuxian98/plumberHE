@@ -1,14 +1,24 @@
 ---
 title: "Introduction"
 output: html_document
-date: '2022-07-06'
+date: '2022-11-25'
 ---
 
+<style type="text/css/image">
+.main-container {
+  max-width: 100% !important;
+  margin: auto;
+}
+</style>
 
+This example application was created for the <a href="https://r-hta.org/" target="_blank">R-HTA</a> workshop, held at Oxford University on Thursday 19th May 2022. 
 
-This example application was created for the <a href="https://r-hta.org/" target="_blank">R-HTA</a> workshop, held at Oxford University on Thursday 19th May 2022. The manuscript for this application is currently under review at Wellcome Open Research.
+This app showcases the methods described in [Smith, Schneider & Mohammed (2022)](https://wellcomeopenresearch.org/articles/7-194).
 
-# **Automating a living health economic evaluation with GitHub Actions & Plumber APIs**
+The API Key is the doi of the paper:
+https://doi.org/10.12688/wellcomeopenres.17933.2
+
+# **Living HTA: Automating health economic evaluation with GitHub Actions & plumber APIs**
 
 Robert Smith<sup>1,2,3</sup>, Paul Schneider<sup>1,3</sup> & Wael Mohammed<sup>1,3</sup>
 
@@ -37,11 +47,15 @@ This example demonstrates that it is possible, within a HEOR setting, to separat
 
 
 ## Diagram
-![image](https://user-images.githubusercontent.com/41961614/177011969-3c272532-b8f8-4c2e-8b87-06a5f6737514.png)
+
+<img src="https://github.com/RobertASmith/plumberHE/blob/main/app_files/www/process_diagram2.jpg?raw=true" alt="plot of chunk unnamed-chunk-1" width="80%" />
+
+
+<!-- ![image](https://github.com/RobertASmith/plumberHE/blob/main/app_files/www/process_diagram2.jpg?raw=true){width=250px} -->
 
 ## The API
 
-The example plumber code used to generate the API can be found <a href="https://github.com/RobertASmithBresMed/plumberHE/tree/main/darthAPI" target="_blank">here</a>.
+The example plumber code used to generate the API can be found <a href="https://github.com/RobertASmith/plumberHE/blob/main/darthAPI/plumber.R" target="_blank">here</a>.
 
 # The App
 This app allows the user to query the model without access to the underlying data, in fact even those tasked with building the app did not have access to the underlying data. Within the app, the following code is executed to send a request to the API, which returns the results. Each time the `run model` button is pressed the following code runs in the app's server:

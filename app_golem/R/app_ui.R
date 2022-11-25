@@ -98,7 +98,8 @@ app_ui <- function(request) {
         tabItems(
           tabItem(
             tabName = "intro",
-            HTML(markdown::markdownToHTML(knitr::knit("inst/app/www/intro.Rmd", quiet=T),fragment.only = T))
+            HTML(markdown::markdownToHTML(knitr::knit("inst/app/www/intro.Rmd", quiet=T),
+                                          fragment.only = T))
             #includeMarkdown(path = "./inst/app/www/intro.Rmd")
           ),
           
@@ -109,8 +110,31 @@ app_ui <- function(request) {
           
           tabItem(
             tabName = "report",
-            h5("Report tab")
-          ),
+            HTML("<p>A report is generated through the automated process described in the 
+                  previous tab and in <a href='https://wellcomeopenresearch.org/articles/7-194'>
+                 Smith, Schneider & Mohammed (2022)</a>! The example shown below
+                 is automatically updated every time the data on which the model depends 
+                 is updated.</p>"),
+            br(),
+            hr(),
+            br(),
+            fluidRow(
+              column(
+                offset = 2,
+                width = 8,
+                box(
+                  title = "Living Report",
+                  width = NULL,
+                  collapsible = FALSE,
+                  maximizable = TRUE,
+                  tags$iframe(
+                    src="www/darthreport.pdf",
+                    width="100%",
+                    height = "500"
+                  )
+                )
+              )
+          )),
           
           tabItem(
             tabName = "info",
@@ -136,7 +160,12 @@ app_ui <- function(request) {
                   title = "Video",
                   width = NULL,
                   maximizable = TRUE,
-                  collapsible = FALSE
+                  collapsible = FALSE,
+                  tags$iframe(
+                    src="https://videos.ctfassets.net/k26sw1bgepr3/XJB3NcW4QvS0SJWvmYunx/8b1d2e066dd5d64fa39a86477764ba18/EARL2022-Stream_1_Robert_Smith.mp4",
+                    width="100%",
+                    height = "500"
+                  )
                 )
               )
               
