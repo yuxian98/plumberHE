@@ -10,3 +10,6 @@ There are several functions from the DARTH group (orignal code [here](https://gi
 
 A custom function is defined in the script.
 - `overwrite_parameter_value` overwrites defined parameter inputs (e.g. parameter "p_HS1" use distribution "norm" with defined "mean" and "sd").
+
+Test for PAT
+
