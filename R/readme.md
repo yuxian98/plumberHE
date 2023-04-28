@@ -13,5 +13,7 @@ A custom function is defined in the script.
 
 Test for PAT
 
-CHANGES from GitHub
+CHANGES from GitHub - CHANGES from R Studio 
+
+CHANGES from R Studio
 
